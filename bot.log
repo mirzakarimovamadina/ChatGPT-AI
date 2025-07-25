@@ -1,0 +1,17 @@
+2025-07-25 02:55:59,215 - aiogram.dispatcher - INFO - Start polling
+2025-07-25 02:55:59,317 - aiogram.dispatcher - INFO - Run polling for bot @uzchatgptaibot id=8478171380 - 'ChatGpt'
+2025-07-25 02:56:04,076 - __main__ - ERROR - Xatolik: 'Chat' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Acer\Desktop\gpt\app.py", line 120, in handle_text
+    response = await asyncio.to_thread(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Chat' object is not callable
+2025-07-25 02:56:04,360 - aiogram.event - INFO - Update id=8060367 is handled. Duration 655 ms by bot id=8478171380
+2025-07-25 02:56:18,218 - aiogram.dispatcher - INFO - Polling stopped
+2025-07-25 02:56:18,221 - aiogram.dispatcher - INFO - Polling stopped for bot @uzchatgptaibot id=8478171380 - 'ChatGpt'
